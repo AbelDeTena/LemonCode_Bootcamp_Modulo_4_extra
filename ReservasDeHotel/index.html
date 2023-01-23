@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body> 
+  <label for="formulario"><h1 class="title">Reserva de <span class="text_color">Hotel</span></h1></label>
+  <form class="formulario" action="" id="formulario">
+    <div class="input">
+      <select name="tipoHabitacion" id="type" title="Tipo de habitación" class="input">
+        <option value="0">-Tipo de habitación-</option>
+        <option value="100">Standar</option>
+        <option value="120">Junior Suite</option>
+        <option value="150">Suite</option>
+      </select>
+    </div>
+    <div class="input">
+      <select
+      name="ocupacion"
+      id="ocupacion"
+      title="Ocupación de la habitación" class="input">
+      <option value="0">-Ocupación-</option>
+      <option value="0.75">Individual</option>
+      <option value="1">Doble</option>
+      <option value="1.25">Triple</option>
+    </select>
+  </div>
+  
+  <div class="input">
+  <label for="noches">Número de <span class="text_color" class="input">noches</span></label>
+  <input type="number" name="noches" id="noches" min="1" value="1" class="input" />
+</div>
+<div class="input">
+  <label for="parking" class="input">Número de noches de <span class="text_color">parking</span></label>
+  <input type="number" name="parking" id="parking" min="0" value="0" class="input" class="input" />
+</div>
+
+
+<div class="input">
+  <label for="spa" class="input">Desea reserva el <span class="text_color" >SPA</span</label>
+    <input type="checkbox" name="spa" id="spa" />
+  </div>
+  
+  <div class="input">
+    <label for="resultado" class="input"><span class="text_color">Precio</span> de la estancia:</label>
+    <input type="text" id="resultado"  class="input"/>
+  </div>
+</form>
+
+
+<script src="app.js"></script>
+</body>
+</html>
